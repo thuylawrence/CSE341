@@ -7,6 +7,34 @@ GET http://localhost:3000/users
 
 GET http://localhost:3000/users/6543c03740f05d49a981aa87
 
+### Create contact
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+   
+  "firstName": "Mary",
+  "lastName": "Le",
+  "email": "wannabe@example.com",
+  "favoriteColor": "Blue",
+  "birthday": "1982-11-05"
+}
+
+### PUT contact
+PUT http://localhost:3000/users/6543c03740f05d49a981aa87 HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Mary",
+  "lastName": "Le",
+  "email": "wannabe@example.com",
+  "favoriteColor": "Blue",
+  "birthday": "1982-11-05"
+}
+
+### DELETE contact
+DELETE http://localhost:3000/users/6543c03740f05d49a981aa87 HTTP/1.1
+
 
 
 
